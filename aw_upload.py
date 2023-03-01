@@ -10,7 +10,7 @@ from selenium.webdriver.chrome.options import Options
 import os
 from pathlib import Path
 
-def uploadModel(username='dsw@i-wunder.com', password='dsw', fileModelPath = "saved_models/randomforest_with_advertising.pkl"):
+def uploadModel(username='', password='dsw', fileModelPath = "saved_models/randomforest_with_advertising.pkl"):
     
     filePath = os.getcwd().replace("\\","/")+"/"+fileModelPath
     p = Path(filePath)
